@@ -1,0 +1,10 @@
+import mongoose, { Schema } from 'mongoose';
+
+const titleSchema = new Schema(
+  {
+        
+  },
+  { timestamps: true } // Add this option to include createdAt and updatedAt fields
+);
+
+export const Content_type = mongoose.model('Content_type', titleSchema);
